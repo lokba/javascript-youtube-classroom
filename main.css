@@ -211,15 +211,18 @@ body {
   width: 80px;
   height: 36px;
   background: var(--save-btn-bg-color);
+  color: var(--save-btn-text-color);
   margin-top: 4px;
 }
 
 .video-item__save-button:hover {
-  background: var(--save-btn-bg-hover-color);
+  background: #c5f6fa;
 }
 
 .video-item__save-button.hide {
-  display: none;
+  background: var(--save-btn-bg-hide-color);
+  color: var(--save-btn-text-color);
+  cursor: not-allowed;
 }
 
 :root {
@@ -234,8 +237,10 @@ body {
   --search-btn-bg-color: #00bcd4;
   --search-btn-text-color: #ffffff;
 
-  --save-btn-bg-color: #f9f9f9;
-  --save-btn-bg-hover-color: #efefef;
+  --save-btn-bg-color: #3bc9db;
+  --save-btn-bg-hover-color: #c5f6fa;
+  --save-btn-bg-hide-color: #e3fafc;
+  --save-btn-text-color: #000000;
 }
 
 * {
