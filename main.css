@@ -216,7 +216,7 @@ body {
 }
 
 .video-item__save-button:hover {
-  background: #c5f6fa;
+  background: var(--save-btn-bg-hover-color);
 }
 
 .video-item__save-button.hide {
