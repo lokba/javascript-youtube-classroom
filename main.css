@@ -121,6 +121,10 @@ body {
   margin-top: 50px;
 }
 
+.no-result.hide {
+  display: none;
+}
+
 .no-result__image {
   width: 350px;
   margin-bottom: 32px;
