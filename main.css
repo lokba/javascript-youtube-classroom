@@ -34,11 +34,11 @@ body {
 .nav__button {
   width: 80px;
   height: 36px;
-  background: #f5f5f5;
+  background: var(--nav-btn-bg-color);
 }
 
 .nav__button:hover {
-  background: #ebebeb;
+  background: var(--nav-btn-bg-hover-color);
 }
 
 .modal-container {
@@ -60,14 +60,15 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--dimmer-bg-color);
+  opacity: 0.5;
 }
 
 .search-modal {
   position: relative;
   width: 1080px;
   height: 727px;
-  background: #ffffff;
+  background: var(--modal-bg-color);
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   padding: 50px 30px 32px 30px;
@@ -97,15 +98,15 @@ body {
 }
 
 .search-input__keyword::placeholder {
-  color: #8b8b8b;
+  color: var(--search-input-text-color);
   font-size: 16px;
 }
 
 .search-input__search-button {
   width: 72px;
   height: 36px;
-  background: #00bcd4;
-  color: #ffffff;
+  background: var(--search-btn-bg-color);
+  color: var(--search-btn-text-color);
 }
 
 .search-result.search-result--no-result {
@@ -209,16 +210,32 @@ body {
   right: 0;
   width: 80px;
   height: 36px;
-  background: #f9f9f9;
+  background: var(--save-btn-bg-color);
   margin-top: 4px;
 }
 
 .video-item__save-button:hover {
-  background: #efefef;
+  background: var(--save-btn-bg-hover-color);
 }
 
 .video-item__save-button.hide {
   display: none;
+}
+
+:root {
+  --nav-btn-bg-color: #f5f5f5;
+  --nav-btn-bg-hover-color: #ebebeb;
+
+  --dimmer-bg-color: #000000;
+
+  --modal-bg-color: #ffffff;
+
+  --search-input-text-color: #8b8b8b;
+  --search-btn-bg-color: #00bcd4;
+  --search-btn-text-color: #ffffff;
+
+  --save-btn-bg-color: #f9f9f9;
+  --save-btn-bg-hover-color: #efefef;
 }
 
 * {
